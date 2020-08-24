@@ -1,0 +1,8 @@
+[Unit]
+After=NetworkManager-wait-online.service  
+
+[Service]
+ExecStart=/usr/local/bin/updater.sh
+
+[Install]
+WantedBy=default.target
